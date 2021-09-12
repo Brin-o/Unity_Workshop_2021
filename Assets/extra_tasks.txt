@@ -1,0 +1,14 @@
+Extra tasks!
+
+If you feel like i'm going too slow or have a basic understanding of Unity feel free to try tackling some of the following tasks:
+
+1. Adding a sound to the pickup
+    1.1 Picking randomly between multiple sounds
+2. Adding a bad pickup 
+    2.1 Making the bad pickup destroy the player
+    2.2 Randomly selecting if the GameManager will spawn a bad or good pickup
+    2.3 Making the bad pickup move randomly around the screen
+    2.4 Displaying a message with a highscore 
+3. Add a wall to the play area so that the player can not leave
+4. Increase the pace of objects spawning the higher the score is
+5. Implement a restart button
