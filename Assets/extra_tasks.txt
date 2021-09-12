@@ -12,3 +12,4 @@ If you feel like i'm going too slow or have a basic understanding of Unity feel 
 3. Add a wall to the play area so that the player can not leave
 4. Increase the pace of objects spawning the higher the score is
 5. Implement a restart button
+6. Remake the game in 3d lmao
