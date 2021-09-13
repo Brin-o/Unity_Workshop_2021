@@ -7,8 +7,7 @@ public class FinalTopDownController : MonoBehaviour
     public Rigidbody2D rigidbody2D;
 
     public Vector2 inputVector;
-    public float acceleration = 25f;
-    public float maxSpeed = 50f;
+    public float speed = 25f;
     public float friction = 0.9f;
     public Vector2 velocity;
 
@@ -26,17 +25,14 @@ public class FinalTopDownController : MonoBehaviour
         //if input is not zero we accelerate wherever we are going
         if(inputVector != Vector2.zero)
         {
-            velocity += inputVector * acceleration;
+            velocity = inputVector * speed;
             //Clamp restricts the variable to a minimum/maximum number
-            velocity.x = Mathf.Clamp(velocity.x, -maxSpeed, maxSpeed);
-            velocity.y = Mathf.Clamp(velocity.y, -maxSpeed, maxSpeed);
         }
         //otherwise we apply friction
         else
         {
             velocity *= friction; 
         }
-
         rigidbody2D.velocity = velocity;
     }
 
